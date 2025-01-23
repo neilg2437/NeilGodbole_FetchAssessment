@@ -44,6 +44,7 @@ As far as our data model's performance, because we are frequently joining across
 Please let me know when you are available. Thanks so much!
 
 Best regards,
+
 Neil Godbole
 
 
