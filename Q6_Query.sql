@@ -1,9 +1,10 @@
 --  Filter users created within the specified date range
 WITH RecentUsers AS (
     SELECT 
-        id_oid AS user_id 
+        id_oid AS user_id
     FROM users
-    WHERE FORMAT(DATEADD(SECOND, createdDate_date / 1000, '1970-01-01'), 'yyyy-MM') BETWEEN '2020-10' AND '2021-03'
+    WHERE DATEADD(SECOND, createdDate_date / 1000, '1970-01-01') 
+          BETWEEN '2020-08-12' AND '2021-02-12'
 ),
 
 -- Get receipts for selected users
