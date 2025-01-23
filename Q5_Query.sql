@@ -1,10 +1,10 @@
--- Select users created between October 2020 and March 2021
+-- Select users created between August 2020 and February 2021
 WITH RecentUsers AS (
     SELECT 
         id_oid AS user_id
     FROM users
-    WHERE FORMAT(DATEADD(SECOND, createdDate_date / 1000, '1970-01-01'), 'yyyy-MM') 
-          BETWEEN '2020-10' AND '2021-03'
+    WHERE DATEADD(SECOND, createdDate_date / 1000, '1970-01-01') 
+          BETWEEN '2020-08-12' AND '2021-02-12'
 ),
 
 -- Get receipts for the selected users
